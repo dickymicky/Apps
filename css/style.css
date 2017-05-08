@@ -6,7 +6,23 @@ html, body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
 }
-
+.last-child {
+    margin: 0;
+}
+header h1,
+header ul,
+header p,
+nav ul,
+#intro div,
+#mainview div {
+    position: absolute;
+}
+nav ul,
+#intro div,
+#mainview div {
+    top: 50%;
+    left: 50%;
+}
 
 /* Layouts */
 header,
@@ -17,12 +33,6 @@ header {
     width: 100%;
     height: 100px;
     z-index: 2;
-}
-header h1,
-header ul,
-header p,
-nav ul {
-    position: absolute;
 }
 header h1 {
     width: 28px;
@@ -43,9 +53,6 @@ header ul li {
     float: left;
     margin-right: 10px;
     font-size: 16px;
-}
-header ul li.last-child {
-    margin-right: 0;
 }
 header ul li a.act {
     color: rgba(255, 255, 255, 0.5);
@@ -71,21 +78,102 @@ nav {
     display: none;
     background-color: #2e71f2;
 }
-
 nav ul {
-    left: 50%;
-    margin-left: -80px;
-    top: 50%;
     margin-top: -118px;
+    margin-left: -80px;
 }
 nav ul li {
     margin-bottom: 40px;
-}
-nav ul li.last-child {
-    margin-bottom: 0;
 }
 nav ul li a {
     color: #fff;
     font-size: 24px;
     letter-spacing: -0.5px;
+}
+
+#intro {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #5f8ce1;
+}
+#intro div {
+    width: 810px;
+    color: #fff;
+    text-align: center;
+    margin-top: -178px;
+    margin-left: -405px;
+}
+#intro div .gs {
+    font-size: 18px;
+}
+#intro div h2 {
+    font: 400 60px 'PT Serif', serif;
+    letter-spacing: -1px;
+    margin: 40px 0 90px;
+}
+#intro div h2 em {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+#intro div .button {
+    width: 240px;
+    height: 46px;
+    margin: 0 auto;
+}
+#intro div .button a {
+    display: block;
+    width: 220px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 23px;
+}
+#intro div .button a img {
+    display: block;
+    width: 18px;
+    height: 22px;
+    margin: 5px 0 9px;
+    float: left;
+    margin-left: 10px;
+}
+
+#mainview {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: url(../images/mainview.jpg) 0 0 no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#mainview div {
+    margin-top: -228px;
+    margin-left: -202px;
+    color: #fff;
+}
+#mainview h2 {
+    font: 600 48px 'Montserrat', sans-serif;
+    letter-spacing: -1px;
+}
+#mainview .play {
+    width: 152px;
+    height: 152px;
+    margin: 60px auto;
+}
+#mainview .play a {
+    display: block;
+    width: 152px;
+    height: 152px;
+    background: url(../images/play.png) 0 0 no-repeat;
+    border-radius: 76px;
+}
+#mainview .play a:hover {
+    background: url(../images/play-roll.png) 0 0 no-repeat;
+}
+#mainview .last-of-type {
+    font: 400 18px 'PT Serif', serif;
+    color: rgba(255, 255, 255, 0.5)
 }
