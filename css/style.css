@@ -1,1 +1,91 @@
 @charset "utf-8";
+
+/* COMMON */
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Layouts */
+header,
+nav {
+    position: fixed;
+}
+header {
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+}
+header h1,
+header ul,
+header p,
+nav ul {
+    position: absolute;
+}
+header h1 {
+    width: 28px;
+    height: 28px;
+    left: 40px;
+    top: 36px;
+    background: url(../images/logo.png) 0 0 no-repeat;
+}
+header ul {
+    right: 360px;
+    top: 40.5px;
+}
+header ul li,
+header ul li a {
+    color: #fff;
+}
+header ul li {
+    float: left;
+    margin-right: 10px;
+    font-size: 16px;
+}
+header ul li.last-child {
+    margin-right: 0;
+}
+header ul li a.act {
+    color: rgba(255, 255, 255, 0.5);
+}
+header p {
+    width: 26px;
+    height: 18px;
+    right: 260px;
+    top: 41px;
+}
+header p a {
+    display: block;
+    width: 26px;
+    height: 18px;
+}
+
+nav {
+    width: 300px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: none;
+    background-color: #2e71f2;
+}
+
+nav ul {
+    left: 50%;
+    margin-left: -80px;
+    top: 50%;
+    margin-top: -118px;
+}
+nav ul li {
+    margin-bottom: 40px;
+}
+nav ul li.last-child {
+    margin-bottom: 0;
+}
+nav ul li a {
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+}
