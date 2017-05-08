@@ -10,7 +10,8 @@ $(document).ready(function(){
         $nav = $('header p a');
 
     $tab.on('click', function(){
-        $(this).addClass('act').parent().siblings().children('a').removeClass('act');
+        $tab.stop(false, false).removeClass('act');
+        $(this).stop(false, false).addClass('act');
     });
 
     // SideMenu

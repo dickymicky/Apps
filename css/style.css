@@ -47,7 +47,7 @@ header ul {
 }
 header ul li,
 header ul li a {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.5);
 }
 header ul li {
     float: left;
@@ -55,7 +55,7 @@ header ul li {
     font-size: 16px;
 }
 header ul li a.act {
-    color: rgba(255, 255, 255, 0.5);
+    color: #fff;
 }
 header p {
     width: 26px;
